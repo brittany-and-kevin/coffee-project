@@ -3,32 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
+<div class="col-12">
+    <br>
+    <h1 class="text-center">Coffee!</h1>
+    <hr>
+</div>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-    </form>
+<!--<form>-->
+<!--<label for="roast-selection"></label>-->
+<!--<select id="roast-selection">-->
+<!--<div class="coffee-type">-->
+<!--<option>light</option>-->
+<!--</div>-->
+<!--<div class="coffee-type">-->
+<!--<option>medium</option>-->
+<!--</div>-->
+<!--<div class="coffee-type">-->
+<!--<option>dark</option>-->
+<!--</div>-->
+<!--</select>-->
+<!--<input id="submit" type="submit"/>-->
+<!--</form>-->
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Coffee Name</th>
+        <th>ROAST</th>
+    </tr>
+    </thead>
+    <tbody id="coffees"></tbody>
+</table>
 
-    <script src="main.js"></script>
+<!--<div class="col-md-6 float-left">-->
+<!--<div class="dark">-->
+<!--<h3>French</h3>-->
+<!--<p>dark</p>-->
+<!--</div>-->
+<!--<div class="dark">-->
+<!--<h3>Italian</h3>-->
+<!--<p>dark</p>-->
+<!--</div>-->
+<!--<div class="dark">-->
+<!--<h3>Viennese</h3>-->
+<!--<p>dark</p>-->
+<!--</div>-->
+<!--<div class="dark">-->
+<!--<h3>Espresso</h3>-->
+<!--<p>dark</p>-->
+<!--</div>-->
+<!--<div class="dark">-->
+<!--<h3>European</h3>-->
+<!--<p>dark</p>-->
+<!--</div>-->
+<!--<div class="dark">-->
+<!--<h3>New Orleans</h3>-->
+<!--<p>dark</p>-->
+<!--</div>-->
+<!--<div class="dark">-->
+<!--<h3>Continental</h3>-->
+<!--<p>dark</p>-->
+<!--</div>-->
+<!--<div class="dark">-->
+<!--<h3>High</h3>-->
+<!--<p>dark</p>-->
+<!--</div>-->
+<!--<div class="medium">-->
+<!--<h3>Breakfast</h3>-->
+<!--<p>medium</p>-->
+<!--</div-->
+<!--<div class="medium">-->
+<!--<h3>American</h3>-->
+<!--<p>medium</p>-->
+<!--</div>-->
+<!--<div class="medium">-->
+<!--<h3>City</h3>-->
+<!--<p>medium</p>-->
+<!--</div>-->
+<!--<div class="light">-->
+<!--<h3>Cinnamon</h3>-->
+<!--<p>light</p>-->
+<!--</div>-->
+<!--<div class="light">-->
+<!--<h3>Half City</h3>-->
+<!--<p>light</p>-->
+<!--</div>-->
+<!--<div class="light">-->
+<!--<h3>Light City</h3>-->
+<!--<p>light</p>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="col-md-6 float-right">
+    <div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group font-weight-bold">Roast<br>
+                <form>
+                    <label for="roast-selection"></label>
+                    <div class="input-group mb-3">
+                        <select class="custom-select" id="roast-selection">
+                            <div class="coffee-type">
+                                <option>all</option>
+                            </div>
+                            <div class="coffee-type">
+                                <option>light</option>
+                            </div>
+                            <div class="coffee-type">
+                                <option>medium</option>
+                            </div>
+                            <div class="coffee-type">
+                                <option>dark</option>
+                            </div>
+                        </select>
+                </form>
+
+    </div>
+    </li>
+    </ul>
+</div>
+<div class="font-weight-bold">Coffee Name</div>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <br>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block mt-3" id="submit" type="submit">Submit</button>
+</div>
+<div>
+    <hr>
+    <h2 class="text-center">Add a Coffee</h2>
+    <div>
+        <ul class="list-group list-group-flush mt-6">
+            <li class="list-group font-weight-bold">Roast<br>
+                <div class="input-group mb-3">
+                    <select class="custom-select">
+                        <option value="1">all</option>
+                        <option value="2">light</option>
+                        <option value="3">medium</option>
+                        <option value="3">dark</option>
+                    </select>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="font-weight-bold">Name</div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Recipient's username"
+               aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <br>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Submit</button>
+    </div>
+</div>
+</div>
+
+<script src="main.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 </html>
