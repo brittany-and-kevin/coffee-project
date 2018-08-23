@@ -3,180 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 <body>
-<div class="col-12">
-    <br>
-    <h1 class="text-center">Coffee!</h1>
-    <hr>
-</div>
-
-<!--<form>-->
-<!--<label for="roast-selection"></label>-->
-<!--<select id="roast-selection">-->
-<!--<div class="coffee-type">-->
-<!--<option>light</option>-->
-<!--</div>-->
-<!--<div class="coffee-type">-->
-<!--<option>medium</option>-->
-<!--</div>-->
-<!--<div class="coffee-type">-->
-<!--<option>dark</option>-->
-<!--</div>-->
-<!--</select>-->
-<!--<input id="submit" type="submit"/>-->
-<!--</form>-->
-
-<!--<table>-->
-    <!--<thead>-->
-    <!--<tr>-->
-        <!--<th class="d-none">ID</th>-->
-        <!--<th class="d-none">Coffee Name</th>-->
-        <!--<th class="d-none">ROAST</th>-->
-    <!--</tr>-->
-    <!--</thead>-->
-    <!--<tbody id="coffees"></tbody>-->
-<!--</table>-->
-
-<div class="col-md-6 float-left">
-<div>
-<h3 class="roast-selection">French</h3>
-<p class="coffee-type">dark</p>
-</div>
-<div>
-<h3 class="roast-selection">Italian</h3>
-<p class="coffee-type">dark</p>
-</div>
-<div>
-<h3 class="roast-selection">Viennese</h3>
-<p class="coffee-type">dark</p>
-</div>
-<div>
-<h3 class="roast-selection">Espresso</h3>
-<p class="coffee-type">dark</p>
-</div>
-<div>
-<h3 class="roast-selection">European</h3>
-<p class="coffee-type">dark</p>
-</div>
-<div>
-<h3 class="roast-selection">New Orleans</h3>
-<p class="coffee-type">dark</p>
-</div>
-<div>
-<h3 class="roast-selection">Continental</h3>
-<p class="coffee-type">dark</p>
-</div>
-<div>
-<h3 class="roast-selection">High</h3>
-<p class="coffee-type">dark</p>
-</div>
-<div>
-<h3 class="roast-selection">Breakfast</h3>
-<p class="coffee-type">medium</p>
-</div
-<div>
-<h3 class="roast-selection">American</h3>
-<p class="coffee-type">medium</p>
-</div>
-<div>
-<h3 class="roast-selection">City</h3>
-<p class="coffee-type">medium</p>
-</div>
-<div >
-<h3 class="roast-selection">Cinnamon</h3>
-<p class="coffee-type">light</p>
-</div>
-<div>
-<h3 class="roast-selection">Half City</h3>
-<p class="coffee-type">light</p>
-</div>
-<div>
-<h3 class="roast-selection">Light City</h3>
-<p class="coffee-type">light</p>
-</div>
-</div>
-
-
-<div class="col-md-6 float-right">
-    <div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group font-weight-bold">Roast<br>
-                <form>
-                    <label for="roast-selection"></label>
-                    <div class="input-group mb-3">
-                        <select class="custom-select" id="roast-selection">
-                            <div class="coffee-type">
-                                <option>all</option>
-                            </div>
-                            <div class="coffee-type">
-                                <option>light</option>
-                            </div>
-                            <div class="coffee-type">
-                                <option>medium</option>
-                            </div>
-                            <div class="coffee-type">
-                                <option>dark</option>
-                            </div>
-                        </select>
-                </form>
-
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid mb-0">
+    <div class="heading-bg-container px-4">
+        <h1 class="display-4">C+M Coffee Inc.</h1>
+        <p class="lead">"Best cup of joe this side of the Mississippi."<br><em>-Time Magazine</em></p>
     </div>
-    </li>
-    </ul>
 </div>
-<div class="font-weight-bold">Coffee Name</div>
-<div class="input-group mb-3">
-    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
-    <div class="input-group-append">
-        <br>
-    </div>
-    <button type="button" class="btn btn-primary btn-lg btn-block mt-3" id="submit" type="submit">Submit</button>
-</div>
-<div>
-    <hr>
-    <h2 class="text-center">Add a Coffee</h2>
-    <div>
-        <ul class="list-group list-group-flush mt-6">
-            <li class="list-group font-weight-bold">Roast<br>
-                <div class="input-group mb-3">
-                    <select class="custom-select">
-                        <option value="1">all</option>
-                        <option value="2">light</option>
-                        <option value="3">medium</option>
-                        <option value="3">dark</option>
-                    </select>
-                </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
-    <div class="font-weight-bold">Name</div>
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" aria-label="Recipient's username"
-               aria-describedby="basic-addon2">
-        <div class="input-group-append">
-            <br>
+</nav>
+<!-- Main Container -->
+<div class="container-fluid pb-5">
+    <!-- Page Header -->
+    <div class="row">
+        <h2 class="mx-auto mt-4">Find your dream brew, or create your own:</h2>
+    </div>
+    <hr>
+    <!--Row everything is in-->
+    <div class="row">
+        <!-- Column containing coffees -->
+        <div id="coffees" class="col-12 col-sm-6 mt-3">
         </div>
-        <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Submit</button>
+        <!-- Column containing both Search/Add Coffee Forms -->
+        <div class="col-12 col-sm-6 mt-3">
+            <!-- Top search form (start)-->
+            <form>
+                <label for="roast-selection">Roast Selection</label>
+                <br>
+                <!-- Roast Selection dropdown options -->
+                <select class="form-control" id="roast-selection">
+                    <option selected>all</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <label for="coffee_name">Coffee Name</label>
+                <input class="form-control" type="text" id="coffee_name">
+                <br>
+                <!-- search coffee submit button-->
+                <input class="btn btn-outline-primary btn-block" type="button" value="Search">
+            </form>
+            <hr>
+            <!--Add a Coffee form (start) -->
+            <h3 class="py-2">Add a Coffee</h3>
+            <form class>
+                <label for="new_roast">Roast Selection</label>
+                <br>
+                <!-- Roast selection dropdown options for adding new coffee -->
+                <select class="form-control" id="new_roast">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <!-- Adding New Coffee name -->
+                <label for="new_coffee_name">Coffee Name</label>
+                <input class="form-control" type="text" id="new_coffee_name">
+                <br>
+                <!-- New Coffee submit button-->
+                <input class="btn btn-outline-primary btn-block" id="add_coffee" type="button" value="Add Coffee"/>
+            </form>
+        </div>
     </div>
 </div>
-</div>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script src="main.js"></script>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
 </body>
 </html>
