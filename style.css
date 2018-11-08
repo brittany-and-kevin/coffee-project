@@ -2,7 +2,11 @@ table {
     border-collapse: collapse;
     margin: 15px 0;
 }
-
+.jumbotron {
+    background-image: url("coffeeOrderImage.jpeg");
+    opacity: 0.7;
+    color: white;
+}
 td, th {
     border: 1px solid black;
     padding: 5px 10px;
