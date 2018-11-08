@@ -4,7 +4,6 @@ table {
 }
 .jumbotron {
     background-image: url("coffeeOrderImage.jpeg");
-    opacity: 0.7;
     color: white;
 }
 td, th {
